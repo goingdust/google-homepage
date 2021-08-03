@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Google</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png">
         <link href="styles/reset.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <div class="search-section">
+            <input type="search" id="search-text" name="search-text" required>
+        </div>
+        <div class="search-section">
+            <button class="search-button" type="button" name="search-button">Google Search</button>
+            <button class="search-button" type="button" name="lucky">I'm Feeling Lucky</button>
+        </div>
     </body>
-
+</html>
