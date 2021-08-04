@@ -6,15 +6,17 @@
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png">
         <link href="styles/reset.css" rel="stylesheet">
         <link href="styles/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d607215de1.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <div class="search-section">
+        <div class="search-section" id="search-container">
+            <i class="fas fa-search"></i>
             <input type="search" id="search-text" name="search-text" required>
         </div>
-        <div class="search-section">
-            <button class="search-button" type="button" name="search-button">Google Search</button>
-            <button class="search-button" type="button" name="lucky">I'm Feeling Lucky</button>
+        <div class="search-section" id="search-buttons">
+            <button class="search-button1" type="button" name="search-button">Google Search</button>
+            <button class="search-button2" type="button" name="lucky">I'm Feeling Lucky</button>
         </div>
     </body>
 </html>

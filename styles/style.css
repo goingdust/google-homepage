@@ -20,8 +20,36 @@
     justify-content: center;
 }
 
-#search-text {
+#search-container {
+    flex: 1 1 575px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
     width: 575px;
     height: 3em;
+    margin: auto;
+    max-width: 90%;
+  }
+
+#search-text {
+    border: 0;
+    flex: 1;
+}
+
+  /*  alternative!
+
+#search-text {
+    width: 575px;
+    height: 3.2em;
+    border: 1px solid #ccc;
     border-radius: 25px;
+}
+
+*/
+
+i {
+    color: rgb(180, 180, 180);
+    padding: 0.9rem;
+    position: relative;
+    top: 0.01rem;
 }
