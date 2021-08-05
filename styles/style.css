@@ -10,9 +10,27 @@
     font-size: 14px;
 }
 
-.logo {
-    display: block;
-    margin: auto;
+/* nav bar on top! */
+
+.top-left-nav {
+    float: left;
+}
+
+.top-right-nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* middle of the page! */
+
+.logo-div {
+    display: flex;
+    justify-content: center;
 }
 
 .search-section {

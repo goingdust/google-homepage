@@ -11,15 +11,21 @@
     <body>
         <div class="top-nav-bar">
             <nav>
-                <ul>
-                    <li class="top-link">About</li>
-                    <li class="top-link">Store</li>
-                    <li class="top-link">Gmail</li>
-                    <li class="top-link">Images</li>
+                <ul class="top-left-nav">
+                    <li class="top-left-link">About</li>
+                    <li class="top-left-link">Store</li>
+                </ul>
+                <ul class="top-right-nav">
+                    <li class="top-right-link">Gmail</li>
+                    <li class="top-right-link">Images</li>
+                    <img src="images/outline_apps_black_24dp.png" alt="Google apps icon">
+                    <button class="sign-in" type="button" name="sign-in-button">Sign in</button>
                 </ul>
             </nav>
         </div>
-        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <div class="logo-div">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
         <div class="search-section" id="search-container">
             <i class="fas fa-search"></i>
             <input type="search" id="search-text" name="search-text" required>
