@@ -32,7 +32,7 @@ li {
     margin: 1rem 0 0;
 }
 
-.empty-space {
+.empty-space1 {
     padding: 0 13.1rem;
 }
 
@@ -46,7 +46,7 @@ li {
 }
 
 .sign-in {
-    background-color: rgb(59, 118, 228);
+    background-color: rgb(51, 123, 230);
     color: white;
     padding: 0.65rem 2rem 0.85rem;
     border: 0;
@@ -55,11 +55,35 @@ li {
     margin-left: 0.4rem;
 }
 
+.top-left-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top-right-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app-icon:hover {
+    padding: 0.6rem;
+    background-color: rgba(128, 128, 128, 0.178);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background-color: rgba(51, 123, 230, 0.932);
+    box-shadow: 0 1px 1px rgba(51, 123, 230, 0.932);
+    cursor: pointer;
+}
+
 /* middle of the page! */
 
 .mid-section {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -124,14 +148,12 @@ i {
     border: 1px solid rgba(189, 189, 189, 0.507);
     box-shadow: 0 1px 2px rgba(189, 189, 189, 0.507);
     cursor: pointer;
-    z-index: 2;
 }
 
 .search-button2:hover {
     border: 1px solid rgba(189, 189, 189, 0.507);
     box-shadow: 0 1px 2px rgba(189, 189, 189, 0.507);
     cursor: pointer;
-    z-index: 2;
 }
 
 .francais {
@@ -145,6 +167,46 @@ i {
 }
 
 .francais-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* bottom nav bar! */
+
+#bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(107, 107, 107);
+    padding: 0.4rem 0 1.35rem;
+    background-color: rgba(189, 189, 189, 0.199);
+}
+
+#advertising {
+    margin-left: 7rem;
+}
+
+#settings {
+    margin-right: 7rem;
+}
+
+.empty-space2 {
+    padding: 0 1.5rem;
+}
+
+.bottom-nav-link1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-nav-link2:hover {
     text-decoration: underline;
     cursor: pointer;
 }
