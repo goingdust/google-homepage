@@ -20,6 +20,10 @@
     float: right;
 }
 
+.sign-in {
+    background-color: rgb(36, 42, 133);
+}
+
 ul {
     list-style-type: none;
     margin: 0;
