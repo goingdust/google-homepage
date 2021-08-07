@@ -15,44 +15,52 @@ html, button {
     color: rgb(53, 53, 53)
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: 1rem;
+    list-style-type: none;
+}
+
 /* nav bar on tops! */
 
 .top-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-left-nav, .top-right-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.top-right-link {
+.top-right-link1 {
     font-size: 13px;
-}
-
-li {
-    margin: 1rem 0 0;
+    margin: 0 0.6rem;
 }
 
 .empty-space1 {
-    padding: 0 13.1rem;
+    flex: 1;
 }
 
-#about {
-    margin-left: 2rem;
-    margin-right: 0.5rem;
-}
-
-#images {
-    margin-right: 1rem;
-}
-
-.sign-in {
+#sign-in {
     background-color: rgb(51, 123, 230);
     color: white;
+    font-size: 14px;
     padding: 0.65rem 2rem 0.85rem;
     border: 0;
     border-radius: 5px;
-    margin-right: 1.5rem;
-    margin-left: 0.4rem;
 }
 
 .top-left-link:hover {
@@ -65,7 +73,7 @@ li {
     cursor: pointer;
 }
 
-.app-icon:hover {
+#app-icon:hover {
     padding: 0.6rem;
     background-color: rgba(128, 128, 128, 0.178);
     border: 0;
@@ -73,24 +81,31 @@ li {
     cursor: pointer;
 }
 
-.sign-in:hover {
+#sign-in:hover {
     background-color: rgba(51, 123, 230, 0.932);
     box-shadow: 0 1px 1px rgba(51, 123, 230, 0.932);
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* middle of the page! */
 
 .mid-section {
-    position: absolute;
+  /*  position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.logo-div {
+    transform: translate(-50%, -50%); -- first attempt at centering it -- */
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-space2 {
+    flex: 1;
+}
+
+.logo {
     margin-bottom: 2rem;
 }
 
@@ -100,13 +115,13 @@ li {
 }
 
 #search-container {
-    flex: 1 1 575px;
     border: 1px solid rgba(189, 189, 189, 0.507);
     border-radius: 25px;
     overflow: hidden;
     width: 575px;
     height: 3.3em;
     margin: auto;
+    max-width: 90%;
   }
 
 #search-container:hover {
@@ -157,8 +172,6 @@ i {
 }
 
 .francais {
-    display: flex;
-    justify-content: center;
     font-size: 13px;
 }
 
@@ -174,9 +187,9 @@ i {
 /* bottom nav bar! */
 
 .bottom-nav-bar {
-    position: fixed;
+   /* position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; -- first attempt at getting it to the bottom of the page -- */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -191,10 +204,6 @@ i {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.bottom-nav-link1, .bottom-nav-link2 {
-    margin: 1.1rem;
 }
 
 .bottom-nav-link1:hover {
