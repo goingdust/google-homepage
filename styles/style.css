@@ -173,32 +173,28 @@ i {
 
 /* bottom nav bar! */
 
-#bottom-nav {
+.bottom-nav-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0.3rem;
+    background-color: rgba(189, 189, 189, 0.199);
+    color: rgb(107, 107, 107);
 }
 
-.bottom-nav-bar {
+.bottom-nav-left, .bottom-nav-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgb(107, 107, 107);
-    padding: 0.4rem 0 1.35rem;
-    background-color: rgba(189, 189, 189, 0.199);
 }
 
-#advertising {
-    margin-left: 7rem;
-}
-
-#settings {
-    margin-right: 7rem;
-}
-
-.empty-space2 {
-    padding: 0 1.5rem;
+.bottom-nav-link1, .bottom-nav-link2 {
+    margin: 1.1rem;
 }
 
 .bottom-nav-link1:hover {
