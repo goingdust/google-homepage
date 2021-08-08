@@ -239,3 +239,15 @@ i {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* media queries!!! fun!!!! */
+
+@media only screen and (max-width: 600px) {
+    .bottom-nav-bar {
+        flex-direction: column;
+    }
+
+    .top-nav-bar {
+        flex-direction: column;
+    }
+}
