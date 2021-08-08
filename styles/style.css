@@ -11,7 +11,7 @@
 
 html, button {
     font-family: Arial, 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 0.9em;
     color: rgb(53, 53, 53)
 }
 
@@ -32,6 +32,10 @@ li {
 input {
     font-family: Arial, 'Montserrat', sans-serif;
     font-size: 1.15em;
+}
+
+button {
+    font-size: 1em;
 }
 
 /* nav bar on tops! */
@@ -128,7 +132,7 @@ input {
     border: 1px solid rgba(189, 189, 189, 0.507);
     border-radius: 25px;
     overflow: hidden;
-    width: 575px;
+    width: 42rem;
     height: 3.3em;
     margin: auto;
     max-width: 90%;
