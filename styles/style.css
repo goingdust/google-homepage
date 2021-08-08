@@ -9,6 +9,10 @@
 
 */
 
+::before, ::after {
+    box-sizing: border-box;
+}
+
 html, button {
     font-family: Arial, 'Montserrat', sans-serif;
     font-size: 0.9em;
